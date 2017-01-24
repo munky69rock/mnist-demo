@@ -1,0 +1,15 @@
+click==6.7
+Flask==0.12
+itsdangerous==0.24
+Jinja2==2.9.4
+MarkupSafe==0.23
+mock==2.0.0
+numpy==1.11.3
+olefile==0.44
+pbr==1.10.0
+Pillow==4.0.0
+powerline-status==2.5
+protobuf==3.1.0
+six==1.10.0
+tensorflow==0.12.1
+Werkzeug==0.11.15
