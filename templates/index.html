@@ -162,7 +162,7 @@
         cache: false,
       }).done(function(result) {
         console.dir(result);
-        var hit = _(result).map((v,k) => [k,v]).sortBy((o) => o[1]).last()[0];
+        var hit = _(result).map(function (v,k) { return [k,v] }).sortBy(function (o) { return o[1] }).last()[0];
         $("#result").html(result_template({ result: result, hit: hit }));
       });
     });
