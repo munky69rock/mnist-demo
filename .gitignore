@@ -97,7 +97,3 @@ ENV/
 # End of https://www.gitignore.io/api/python
 
 MNIST_data/
-checkpoint
-model.ckpt.data-00000-of-00001
-model.ckpt.index
-model.ckpt.meta

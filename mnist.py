@@ -41,7 +41,7 @@ class Classifier:
         self.sess = tf.InteractiveSession()
 
         saver = tf.train.Saver()
-        ckpt = tf.train.get_checkpoint_state('./')
+        ckpt = tf.train.get_checkpoint_state('./model/')
         saver.restore(self.sess, ckpt.model_checkpoint_path)
 
     def predict(self, image):
