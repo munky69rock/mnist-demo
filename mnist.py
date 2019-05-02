@@ -45,8 +45,12 @@ class Classifier:
         saver.restore(self.sess, ckpt.model_checkpoint_path)
 
     def predict(self, image):
-        #prediction = tf.argmax(self.y_conv, 1)
-        #return prediction.eval(feed_dict={self.x: image, self.keep_prob: 1.0}, session=self.sess)
+        # prediction = tf.argmax(self.y_conv, 1)
+        # return prediction.eval(feed_dict={
+        #     self.x: image,
+        #     self.keep_prob: 1.0
+        # },
+        #                        session=self.sess)
 
         feed_dict = {self.x: image, self.keep_prob: 1.0}
         classification = self.sess.run(self.y_conv, feed_dict)
@@ -64,8 +68,10 @@ class Classifier:
         return tf.nn.conv2d(x, W, strides=[1, 1, 1, 1], padding='SAME')
 
     def max_pool_2x2(self, x):
-        return tf.nn.max_pool(
-            x, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
+        return tf.nn.max_pool(x,
+                              ksize=[1, 2, 2, 1],
+                              strides=[1, 2, 2, 1],
+                              padding='SAME')
 
 
 if __name__ == '__main__':
