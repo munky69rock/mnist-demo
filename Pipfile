@@ -22,8 +22,8 @@ tensorflow = "==0.12.1"
 Flask = "==1.0"
 "Jinja2" = "==2.10.1"
 MarkupSafe = "==0.23"
+Pillow = "==6.2.0"
 Pillow = "==4.0.0"
-Werkzeug = "==0.15.3"
 
 [dev-packages]
 nose = "*"
