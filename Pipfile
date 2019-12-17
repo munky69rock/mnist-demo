@@ -23,7 +23,7 @@ Flask = "==0.12.3"
 "Jinja2" = "==2.10.1"
 MarkupSafe = "==0.23"
 Pillow = "==6.2.0"
-Werkzeug = "==0.11.15"
+Pillow = "==4.0.0"
 
 [dev-packages]
 nose = "*"
